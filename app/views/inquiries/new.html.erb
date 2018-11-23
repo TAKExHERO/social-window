@@ -1,8 +1,7 @@
 <div class='topPage'>
   <div class="container">
     <h1>社会の窓通報代理サービス</h1>
-    <p>あなたの周りにいる男性の社会の窓が空いていたら気軽に「社会の窓空いているよ？」と言えるでしょうか？そんな方の代理で通報をいたします。
-    </p>
+    <p>あなたの周りにいる男性の社会の窓が空いていたら気軽に「社会の窓空いているよ？」と言えるでしょうか？そんな方の代理で通報をいたします。</p>
     <%= form_with(model: @inquiry, url: inquiries_confirm_path, local: true) do |f| %>
 
       <% if @inquiry.errors.any? %>
