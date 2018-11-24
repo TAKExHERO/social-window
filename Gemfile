@@ -7,7 +7,7 @@ end
 
 
 gem 'rails', '~> 5.1.6'
-gem 'sqlite3', group: :developmen, require: false
+gem 'sqlite3', group: :development, require: false
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
