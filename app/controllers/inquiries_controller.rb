@@ -13,8 +13,8 @@ class InquiriesController < ApplicationController
   end
 
   def thanks
-     @inquiry = Inquiry.new(inquiry_params)
-      InquiryMailer.received_email(@inquiry).deliver_now
+    @inquiry = Inquiry.new(inquiry_params)
+    InquiryMailer.received_email(@inquiry).deliver_now
   end
 
   private
@@ -22,5 +22,4 @@ class InquiriesController < ApplicationController
   def inquiry_params
     params.require(:inquiry).permit(:name, :email, :relationship, :content)
   end
-
 end
